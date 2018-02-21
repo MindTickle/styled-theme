@@ -13,6 +13,7 @@ Theming system for [styled-components 💅](https://github.com/styled-components
 ## Usage
 
 Play with it on [WebpackBin](https://www.webpackbin.com/bins/-KeZfaFl3_761CAGa0CC)
+
 ```js
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme' 
@@ -131,7 +132,7 @@ Returns the value of `props.theme[path]` or `styledTheme[path]`
 
 **Parameters**
 
--   `path` **([string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)** 
+-   `path` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>)** 
 -   `defaultValue` **any** 
 
 **Examples**
@@ -151,7 +152,7 @@ Shorthand to `key(['fonts', path])`
 
 **Parameters**
 
--   `path` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `path` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 -   `defaultValue` **any** 
 
 **Examples**
@@ -170,7 +171,7 @@ Shorthand to `key(['sizes', path])`
 
 **Parameters**
 
--   `path` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `path` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 -   `defaultValue` **any** 
 
 **Examples**
@@ -192,12 +193,12 @@ The arguments can be passed in any order, as long as types are kept.
 
 **Parameters**
 
--   `index` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The index of tone in theme palette tones array
--   `path` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** The key of the tones in theme palette object (optional, default `props.palette`)
--   `exceptions` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?** An object with path as key and index as value
--   `reverse` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** Flag to return tone from `reversePalette` or `palette`
--   `defaultValue` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** Default value
 -   `args` **...any** 
+-   `index` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** The index of tone in theme palette tones array
+-   `path` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** The key of the tones in theme palette object (optional, default `props.palette`)
+-   `exceptions` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)?** An object with path as key and index as value
+-   `reverse` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?** Flag to return tone from `reversePalette` or `palette`
+-   `defaultValue` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)?** Default value
 
 **Examples**
 
@@ -220,19 +221,19 @@ Returns **[Tones](#tones)**
 
 ### Tone
 
-Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Type: [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### Tones
 
-Type: [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Tone](#tone)>
+Type: [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[Tone](#tone)>
 
 ### Font
 
-Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Type: [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### Size
 
-Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Type: [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### Palette
 
@@ -249,6 +250,13 @@ Type: {}
 ### Theme
 
 Type: {palette: [Palette](#palette)?, reversePalette: [Palette](#palette)?, fonts: [Fonts](#fonts)?, sizes: [Sizes](#sizes)?}
+
+**Properties**
+
+-   `palette` **[Palette](#palette)?** 
+-   `reversePalette` **[Palette](#palette)?** 
+-   `fonts` **[Fonts](#fonts)?** 
+-   `sizes` **[Sizes](#sizes)?** 
 
 ## Related
 
